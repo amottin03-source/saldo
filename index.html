@@ -1,0 +1,68 @@
+# Saldo — controle financeiro grátis
+
+App de educação financeira: entradas e saídas por segmento, orçamento, metas,
+recorrentes e projeção. Funciona offline, é instalável (PWA) e **não coleta
+nenhum dado** — tudo fica guardado no próprio aparelho de cada pessoa.
+
+## Arquivos
+
+- `index.html` — a tela do app
+- `app.js` — toda a lógica
+- `manifest.json` — torna o app instalável
+- `sw.js` — faz funcionar offline
+- `icon-192.png`, `icon-512.png` — ícones
+
+Não há servidor, banco de dados nem login. Custo de operação: zero.
+
+---
+
+## Como publicar de graça no GitHub Pages
+
+### 1. Criar conta no GitHub
+Acesse https://github.com e crie uma conta gratuita (se ainda não tiver).
+
+### 2. Criar um repositório
+- Clique no `+` no topo direito → **New repository**.
+- Em "Repository name", escolha um nome, ex: `saldo`.
+- Marque **Public**.
+- Clique em **Create repository**.
+
+### 3. Subir os arquivos
+- Na página do repositório, clique em **uploading an existing file**
+  (ou Add file → Upload files).
+- Arraste TODOS os arquivos desta pasta (index.html, app.js, manifest.json,
+  sw.js e os dois ícones).
+- Clique em **Commit changes**.
+
+### 4. Ativar o GitHub Pages
+- No repositório, vá em **Settings** (engrenagem no topo).
+- No menu lateral, clique em **Pages**.
+- Em "Branch", selecione **main** e a pasta **/ (root)**. Clique em **Save**.
+- Aguarde 1–2 minutos. A página vai mostrar o link público, algo como:
+  `https://SEU-USUARIO.github.io/saldo/`
+
+Pronto. Esse link é o seu app. Qualquer pessoa no Brasil pode abrir,
+usar e instalar na tela inicial do celular.
+
+---
+
+## Como as pessoas instalam
+
+- **Android (Chrome):** abrir o link → menu (⋮) → "Adicionar à tela inicial".
+- **iPhone (Safari):** abrir o link → botão compartilhar → "Adicionar à Tela de Início".
+
+Depois disso o app abre com ícone próprio, em tela cheia, e funciona sem internet.
+
+---
+
+## Importante sobre os dados
+
+Como tudo fica só no aparelho, se a pessoa trocar de celular ou limpar o
+navegador, os dados se perdem. Por isso o app tem **Exportar / Importar backup**
+(aba "Mais"). Vale orientar os usuários a fazer backup de vez em quando.
+
+## Quer evoluir depois?
+
+Se um dia quiser sincronização entre aparelhos e contas de usuário, aí entra um
+backend (Supabase/Firebase) — o que muda o projeto de patamar e traz
+responsabilidades de LGPD. Não é necessário para começar.
