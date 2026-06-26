@@ -1,13 +1,13 @@
 /* Service worker do Saldo — cache para funcionar offline */
-var CACHE='saldo-v2';
+var CACHE='saldo-v3';
 var ARQUIVOS=[
   './',
   './index.html',
   './app.js',
   './manifest.json',
+  './chart.umd.js',
   './icon-192.png',
-  './icon-512.png',
-  'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js'
+  './icon-512.png'
 ];
 
 self.addEventListener('install',function(e){
