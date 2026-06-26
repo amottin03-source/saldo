@@ -1,5 +1,5 @@
 /* Service worker do Saldo — cache para funcionar offline */
-var CACHE='saldo-v1';
+var CACHE='saldo-v2';
 var ARQUIVOS=[
   './',
   './index.html',
